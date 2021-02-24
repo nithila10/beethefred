@@ -93,7 +93,7 @@ bee.velocityY=0
  go.visible = true
  fill("black")
  text("click space to continue", 400, 290)
- if(keyDown("SPACE")){
+ if(keyDown("SPACE")&&gameState==="end"){
   gameState = "play"
   score = 0
   bee.y=150
